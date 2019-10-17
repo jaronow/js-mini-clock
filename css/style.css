@@ -31,4 +31,6 @@ h1 {
   background: white;
   top: 50%;
   position: absolute;
+  transform-origin: 100%;
+  transform: rotate(90deg);
 }
