@@ -1,0 +1,34 @@
+body {
+  height: 95vh;
+  background-image: linear-gradient(to bottom right, #40F, #7D00FF);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.clock {
+  margin: 100px auto;
+  padding: 10px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 15px solid white;
+  border-radius: 50%;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-5px);
+}
+
+.hand {
+  width: 50%;
+  height: 10px;
+  background: white;
+  top: 50%;
+  position: absolute;
+}
