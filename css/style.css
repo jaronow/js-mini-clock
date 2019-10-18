@@ -3,7 +3,7 @@ body {
   background-image: linear-gradient(to bottom right, #40F, #7D00FF);
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   color: white;
 }

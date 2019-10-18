@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>What Time Is It???</h1>
+    <h2 id="day"></h2>
     <div class="clock">
       <div class="clock-face">
         <div class="hand hour-hand"></div>
@@ -14,5 +15,17 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
+    <script type="text/javascript">
+    function setTime() {
+      const date = new Date();
+      const day = new Date().toLocaleDateString()
+      document.getElementById("day").innerHTML = `Today Is ${day}`
+      const hour = date.getHours() % 12;
+      const minute = date.getMinutes();
+      const second = date.getSeconds();
+      console.log(`Today is ${date}, it is currently ${hour}:${minute}:${second}`);
+    };
+    setInterval(setTime, 1000);
+    </script>
   </body>
 </html>
