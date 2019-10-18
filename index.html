@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1>What Time Is It???</h1>
-    <h2 id="day"></h2>
+    <h1 id="day"></h1>
     <div class="clock">
       <div class="clock-face">
         <div class="hand hour-hand"></div>
@@ -21,8 +20,6 @@
     const secondHand = document.querySelector(".second-hand");
     function setTime() {
       const date = new Date();
-      const day = new Date().toLocaleDateString()
-      document.getElementById("day").innerHTML = `Today Is ${day}`
       const hour = date.getHours();
       const minute = date.getMinutes();
       const second = date.getSeconds();
@@ -32,9 +29,14 @@
       hourHand.style.transform = `rotate(${hourDegree}deg)`;
       minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
       secondHand.style.transform = `rotate(${secondDegree}deg)`;
-      console.log(`Today is ${date}, it is currently ${hour}:${minute}:${second}`);
+    };
+    function setDay() {
+      const day = new Date().toLocaleDateString();
+      document.getElementById("day").innerHTML = `Today Is ${day}`;
     };
     setInterval(setTime, 1000);
+    setDay();
+    setTime();
     </script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 body {
-  height: 95vh;
   background-image: linear-gradient(to bottom right, #40F, #7D00FF);
+  background-size: cover;
 }
 
-h1, h2 {
+h1 {
   text-align: center;
   color: white;
 }
@@ -28,6 +28,8 @@ h1, h2 {
 .hand {
   width: 50%;
   height: 10px;
+  border: 2px solid red;
+  border-radius: 50%;
   background: white;
   top: 50%;
   position: absolute;
